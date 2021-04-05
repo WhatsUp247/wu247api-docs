@@ -1,0 +1,22 @@
+{
+	"name": "wu247api-docs",
+	"version": "1.0.0",
+	"description": "Documentation for What'sUp 24/7 API",
+	"main": "index.js",
+	"authors": {
+		"name": "Dominic Cartwright",
+		"email": "dominic.cartwright07@gmail.com"
+	},
+	"repository": "wu247api-docs/wu247api-docs",
+	"scripts": {
+		"dev": "vuepress dev src",
+		"build": "vuepress build src",
+		"deploy": "sh deploy.sh",
+		"create": "vuepress version src"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"vuepress": "^1.5.3",
+		"vuepress-plugin-versioning": "^4.10.2"
+	}
+}
