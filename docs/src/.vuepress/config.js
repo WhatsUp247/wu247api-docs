@@ -2,6 +2,7 @@ const { description } = require("../../package");
 // const path = require("path");
 
 module.exports = {
+	base: "/",
 	/**
 	 * Ref：https://v1.vuepress.vuejs.org/config/#title
 	 */
@@ -31,7 +32,7 @@ module.exports = {
 	 * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
 	 */
 	themeConfig: {
-		repo: "",
+		repo: "https://github.com/WhatsUp247/wu247api-docs",
 		logo: "https://www.whatsup247.com/img/wu-logo-icon.svg",
 		editLinks: false,
 		docsDir: "",
@@ -42,13 +43,13 @@ module.exports = {
 				text: "Guide",
 				link: "/guide/",
 			},
+			// {
+			// 	text: "Config",
+			// 	link: "/config/",
+			// },
 			{
-				text: "Config",
-				link: "/config/",
-			},
-			{
-				text: "VuePress",
-				link: "https://v1.vuepress.vuejs.org",
+				text: "What'sUp 24/7",
+				link: "https://www.whatsup247.com",
 			},
 		],
 		sidebar: {
