@@ -1,6 +1,16 @@
 # Authentication
 
-The API uses token based authentication with OAuth. You will need to request a token and pass that token when requesting data from the API. Every organization has to request their own API key and secret through the What'sUp 24/7 platform. However, each organization can request multiple keys for different projects.
+The API uses token based authentication with OAuth. You will need to request a token to pass when requesting data from the API. Every organization has to request their own API key and secret through the What'sUp 24/7 platform. However, each organization can request multiple keys for different projects.
+
+## Requesting a Token
+
+The URL to request a token is https://api.whatsup247.com/oauth. You will also need to pass the following information:
+
+- **Grant Type:** client_credentials
+- **API Key:** Your organization API key
+- **API Secret:** Your organization secret for API key pair
+
+When requesting data, token will need to be Authorization Bearer.
 
 ## Requesting an API Key & Secret
 
